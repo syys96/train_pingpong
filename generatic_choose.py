@@ -47,11 +47,6 @@ def race(west_name, west_serve, west_play, west_summarize,
 
     # 终局，让双方进行本局总结
     main_table.postcare()
-
-    print("%s win! for %s, West:%s(%d）, East:%s(%d),总时间: %d tick" %
-          (main_table.winner, main_table.reason,
-           west_name, main_table.players['West'].life,
-           east_name, main_table.players['East'].life, main_table.tick))
     return main_table.winner
 
 
@@ -86,7 +81,7 @@ exec('import %s as EP' % (east_name,))
 dataNum = int(input())
 data = generate_factors(dataNum)
 while len(data) > 1 :
-    print(data)
+    print(len(data))
     gentic_algorthim(data)
 f_last = open('./f_last.txt','a')
 retData = "%s'\n'%s'\n'"%(dataNum,data)
