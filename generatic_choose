@@ -1,9 +1,8 @@
 
 import random
 import os
-import show
 from table import Table, LogEntry, RacketData, BallData, CardData, DIM, TMAX, PL, RS
-import shelve,time,testcode
+import shelve,time
 
 
 def race(west_name, west_serve, west_play, west_summarize,
