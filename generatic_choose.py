@@ -65,7 +65,6 @@ def generate_factors(number) :
 
 def gentic_algorthim(data) :
     west_data,east_data = random.sample(data,2)
-    print(west_data,'vs',east_data)
     WP.adjust_fac(west_data[0], west_data[1])
     EP.adjust_fac(east_data[0], east_data[1])
     winner = race(west_name, WP.serve, WP.play, WP.summarize, east_name, EP.serve, EP.play, EP.summarize)
